@@ -1,5 +1,6 @@
 # 🧩 Word Search Puzzle Generator
 
+
 A **Python-based word search puzzle generator** built using **Object-Oriented Programming (OOP)** principles.
 The program generates a random word search grid, places words in multiple directions, fills remaining cells with random letters, and exports the puzzle as a **PNG image** with a neatly formatted word list.
 ---
