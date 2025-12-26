@@ -1,12 +1,12 @@
 from string import ascii_uppercase as uc
 import random, time
 
-log_file = open('log.txt', 'w')
+log_file = open('../log.txt', 'w')
 log_file.write(time.asctime().upper().center(100) + '\n')
 
 
 GRID_SIZE = 15         # number of letters on each edge
-num_words = 12         # number of words to play with
+num_words = 20         # number of words to play with
 grid = [
     [random.choice(uc) for _ in range(GRID_SIZE)]
     for _ in range(GRID_SIZE)
@@ -139,7 +139,7 @@ for i, occupied_coords in enumerate(occupied):
 
 
 random.shuffle(words)  # not execution-useful, just to remove the sorting when showing these words to user ;-)
-print(f'FIND THESE WORDS: (Reshuffled every reload) \n{', '.join(words)}')
+print(f'FIND THESE WORDS: (Reshuffled every run) \n{', '.join(words)}')
 print()
 for row in grid:
     line = '\t'.join(row)
