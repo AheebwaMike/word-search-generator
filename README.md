@@ -39,11 +39,12 @@ Words can be placed in **all major directions**:
 
 ```
 .
-├── word_search_oop2.py   # Main program
+├── word_search_oop.py   # Main program
 ├── words.txt             # Optional custom word list
 ├── word_search.png       # Generated puzzle image
 ├── log.txt               # Generation log
 └── README.md
+└── alternatives          # similar less optimal approaches to this problem 
 ```
 
 ---
@@ -72,7 +73,7 @@ pip install pillow
 Run the script directly:
 
 ```bash
-python word_search_oop2.py
+python word_search_oop.py
 ```
 
 By default, it will:
